@@ -7,9 +7,7 @@ services:
       - POSTGRES_PASSWORD=root
       - POSTGRES_DB=OrdersApp      
     ports:
-      - "5432:5432"
-    volumes:
-      - ./migration/docker-db-initial.sql:/docker-entrypoint-initdb.d/docker-db-initial.sql  
+      - "5432:5432" 
 
   pgadmin-compose:
     image: dpage/pgadmin4
